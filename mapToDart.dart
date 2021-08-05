@@ -1,14 +1,19 @@
 import 'dart:convert';
-import 'class1.dart';
-import 'constants.dart';
-import 'errors.dart';
 
 var data = {
   "Name": "Mohammad",
   "Age": 16,
   "Skills": {"python": 8, "java": 7}
 };
-
+var QuranData2={
+"listOfSurah"=[
+  {
+  "name":"Al Fatihah"
+  },{
+  "name":"Al Kawsar"
+  }
+]
+};
 main() {
   GiveDataHere(QuranData2, "QuranData");
 }

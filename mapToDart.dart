@@ -6,7 +6,7 @@ var data = {
   "Skills": {"python": 8, "java": 7}
 };
 var QuranData2={
-"listOfSurah"=[
+"listOfSurah":[
   {
   "name":"Al Fatihah"
   },{

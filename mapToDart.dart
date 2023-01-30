@@ -5,14 +5,11 @@ var data = {
   "Age": 16,
   "Skills": {"python": 8, "java": 7}
 };
-var QuranData2={
-"listOfSurah":[
-  {
-  "name":"Al Fatihah"
-  },{
-  "name":"Al Kawsar"
-  }
-]
+var QuranData2 = {
+  "listOfSurah": [
+    {"name": "Al Fatihah"},
+    {"name": "Al Kawsar"}
+  ]
 };
 main() {
   GiveDataHere(QuranData2, "QuranData");
@@ -36,7 +33,50 @@ String ag = '';
 String ah = '';
 String ai = '';
 String aj = '';
-List<String> collection = [aa, ab, ac, ad, ae, af, ag, ah, ai, aj];
+String ak = '';
+String al = '';
+String am = '';
+String an = '';
+String ao = '';
+String ap = '';
+String aq = '';
+String ar = '';
+String as = '';
+String at = '';
+String au = '';
+String av = '';
+String aw = '';
+String ax = '';
+String ay = '';
+String az = '';
+List<String> collection = [
+  aa,
+  ab,
+  ac,
+  ad,
+  ae,
+  af,
+  ag,
+  ah,
+  ai,
+  aj,
+  ak,
+  al,
+  am,
+  an,
+  ao,
+  ap,
+  aq,
+  ar,
+  as,
+  at,
+  au,
+  av,
+  aw,
+  ax,
+  ay,
+  az,
+];
 
 GiveDataHere(var map, String mapName) {
   classFromDart(map, k: mapName);
@@ -49,6 +89,23 @@ GiveDataHere(var map, String mapName) {
   print(collection[6]);
   print(collection[7]);
   print(collection[8]);
+  print(collection[9]);
+  print(collection[10]);
+  print(collection[11]);
+  print(collection[12]);
+  print(collection[13]);
+  print(collection[14]);
+  print(collection[15]);
+  print(collection[16]);
+  print(collection[17]);
+  print(collection[18]);
+  print(collection[19]);
+  print(collection[20]);
+  print(collection[21]);
+  print(collection[22]);
+  print(collection[23]);
+  print(collection[24]);
+  print(collection[25]);
 }
 
 void classFromDart(var a, {k, int loop = 0}) {
@@ -81,6 +138,8 @@ void classFromDart(var a, {k, int loop = 0}) {
         } else {
           collection[loop] += "${value.runtimeType} ${spaceClearedKey};\n";
         }
+      } else if (value == null) {
+        collection[loop] += "dynamic ${spaceClearedKey};\n";
       } else {
         collection[loop] += "${value.runtimeType} ${spaceClearedKey};\n";
       }
